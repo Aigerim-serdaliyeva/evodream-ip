@@ -5,7 +5,18 @@
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
-	
+	.s-etap {
+    &__line {
+      width: 830px;
+      height: 234px;
+      right: -10px;
+    }
+
+    .etap {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
 }
 
 // ≥992px
@@ -75,6 +86,16 @@
       }
     }
   }
+
+  .s-etap {
+    &__line {
+      display: none;
+    }
+
+    .w-100 {
+      display: none;
+    }
+  }
 }
 
 // ≥768px
@@ -130,6 +151,7 @@
       }
     } 
   }
+
 }
 
 // ≥576px
@@ -138,9 +160,39 @@
     display: flex;
   }
 
+  .break {
+    display: inline-block;
+  }
+
   .srok {
     .timer-flipchart-inner {
       font-size: 24px;
+    }
+  }
+
+  .s-etap {
+    &__content {
+      flex-direction: column;
+    }
+
+    .etap {
+      width: 100%;
+      flex-direction: row;
+      text-align: left;
+      align-items: flex-start;
+
+      &__number {
+        width: 20px;
+        height: 20px;
+        font-size: 16px;
+        font-weight: 500;
+        flex-shrink: 0;
+        margin: 0 10px 0 0;
+      }
+
+      &__text {
+        flex-grow: 1;
+      }
     }
   }
 

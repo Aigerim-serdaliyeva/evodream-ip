@@ -3,6 +3,7 @@
 @import '../../node_modules/bootstrap/scss/bootstrap-grid.scss';
 @import '../../node_modules/bootstrap/scss/utilities/_spacing.scss';
 @import '../../node_modules/bootstrap/scss/utilities/_display.scss';
+@import '../../node_modules/bootstrap/scss/utilities/_sizing.scss';
 
 * {
   box-sizing: border-box;
@@ -78,6 +79,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .word {
   white-space: nowrap;
+}
+
+.break {
+  display: block;
 }
 
 .text {

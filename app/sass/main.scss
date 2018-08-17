@@ -325,6 +325,54 @@
   }
 }
 
+.s-etap {
+  &__content {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 0;
+  }
+
+  &__line {
+    position: absolute;
+    top: 45px;
+    right: 0px;
+    z-index: -1;
+  }
+
+  .w-100 {
+    margin: 20px 0;
+  }
+
+  .etap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 210px;
+    margin: 0 30px 28px;
+
+    &__number {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 95px;
+      height: 95px;
+      background-color: $accent;
+      font-weight: 900;
+      font-size: 60px;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    &__text {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+}
+
 .s-thanks {
   padding: 200px 0 100px 0;
   flex-grow: 1;

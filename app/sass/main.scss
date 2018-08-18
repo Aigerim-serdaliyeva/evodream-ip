@@ -329,6 +329,35 @@
   }
 }
 
+.s-form {
+  background-color: #4e4d4d;
+}
+
+.s-effect {
+  .effect {
+    text-align: center;
+    margin-bottom: 20px;
+
+    &__image {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      margin-bottom: 10px;
+
+      img {
+        width: 80px;
+      }
+    }
+
+    &__title {
+      font-size: 16px;
+      font-weight: 500;
+      color: #2b2a29;
+      margin-bottom: 10px;
+    }
+  }
+}
+
 .s-portfolio {
   .tab {
     &__links {
@@ -420,6 +449,42 @@
   &__link {
     text-decoration: underline;
     color: $accent;
+  }
+}
+
+.effect-modal {
+  padding: 0;
+  max-width: 750px;
+
+  &__title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  &__content {
+    display: flex;
+  }
+
+  &__text {
+    padding: 30px 20px;
+  }
+
+  ul {
+    @include list();
+  }
+
+  &__form {
+    width: 275px;
+    padding: 60px 10px 50px;
+    flex-shrink: 0;
+    background-color: $dark;    
+  }
+
+  .form {
+    &__title {
+      font-size: 18px;
+    }
   }
 }
 

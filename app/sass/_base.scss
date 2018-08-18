@@ -27,6 +27,7 @@ body {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -221,7 +222,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color:$accent;
   border: none;
   color: #fff !important;
-  white-space: nowrap;
+  // white-space: nowrap;
   cursor: pointer;
 
   &:hover {
@@ -248,7 +249,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid #000;
   background-color: transparent;
   font-family: $default_family, sans-serif;
-  padding: 7px 15px 7px 20px;   
+  padding: 7px 18px;   
 
   &.error {
     border-color: red;
@@ -263,7 +264,8 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
     text-align: left;
     color: red;
-    padding-left: 15px;
+    padding-left: 19px;
+    font-size: 12px;
     margin-top: 5px;
 	}
 
@@ -284,6 +286,7 @@ h1, h2, h3, h4, h5, h6 {
   
   .inverse & {
     color: #fff;
+    border-color: #fff;
 
     &::-webkit-input-placeholder {
       color: #fff;
@@ -328,6 +331,7 @@ h1, h2, h3, h4, h5, h6 {
   &__info {
     font-size: 10px;
     text-align: left;
+    letter-spacing: 0px;
   }
 
   &--horizontal {
@@ -350,11 +354,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   &--vertical {
-    max-width: 300px;
+    max-width: 250px;
     
     .form {
       &__content {
-        max-width: 260px;
+        max-width: 200px;
         margin: 0 auto;    
       }
     }
@@ -432,11 +436,15 @@ h1, h2, h3, h4, h5, h6 {
   &-close {
     left: auto;
     right: 0;
-    color: $text_color;
+    color: #fff;
     z-index: 20;
 
     &:before {
       font-size: 35px;
+    }
+
+    &:hover {
+      color: #fff;
     }
   }
 

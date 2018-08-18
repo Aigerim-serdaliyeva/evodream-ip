@@ -1,14 +1,16 @@
 @import './fonts';
 @import './_mixins/circle';
+@import './_mixins/list';
 
-$default_family: HelveticaNeueCyr, Arial;
-$title_family: HelveticaNeueCyr, Arial;
+$default_family: HelveticaNeueCyr;
+$title_family: HelveticaNeueCyr;
 $font_size: 14px;
 $title_color: #000;
 $text_color: #000;
 
 $accent: #00a0e3;
 $black: #282828;
+$dark: #555554;
 
 // Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
 $grid-gutter-width: 30px;

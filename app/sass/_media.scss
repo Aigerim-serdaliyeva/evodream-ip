@@ -103,8 +103,9 @@
 
   .form {
     &__title {
-      font-size: 16px;
+      font-size: 16px !important;
     }
+
     &--horizontal {
       .form {
         &__content {
@@ -208,6 +209,31 @@
         font-size: 16px;
         margin-bottom: 40px;
       }
+    }
+  }
+
+  .effect-modal {
+    .remodal-close {
+
+      &, &:hover {
+        color: #000;
+      }
+    }
+
+    &__title {
+      font-size: 18px;
+    }
+
+    &__content {
+      flex-direction: column;
+    }
+
+    &__form {
+      width: 100%;
+    }
+
+    .form {
+      margin: 0 auto;
     }
   }
 }

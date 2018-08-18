@@ -382,6 +382,18 @@
   }
 }
 
+.s-reason {
+  .reason {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+
+    img {
+      margin-right: 30px;
+    }
+  }
+}
+
 .s-etap {
   &__content {
     position: relative;

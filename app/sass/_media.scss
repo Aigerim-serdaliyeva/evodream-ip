@@ -153,6 +153,17 @@
     } 
   }
 
+  .s-reason {
+    .reason {
+      flex-direction: column;
+      margin-bottom: 20px;
+      
+      img {
+        margin: 0 0 10px;
+      }
+    }
+  }
+
 }
 
 // ≥576px

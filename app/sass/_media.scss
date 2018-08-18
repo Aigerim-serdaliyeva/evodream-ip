@@ -5,6 +5,12 @@
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
+  .s-reklama {
+    &__ways {
+      margin-left: 0;
+    }
+  }
+
 	.s-etap {
     &__line {
       width: 830px;
@@ -87,6 +93,16 @@
     }
   }
 
+  .s-reklama {
+    &__ways {
+      width: auto;
+    }
+
+    .form {
+      width: 300px;
+    }
+  }
+
   .s-etap {
     &__line {
       display: none;
@@ -141,6 +157,7 @@
   .section {
     &-title {
       font-size: 24px;
+      margin-bottom: 30px;
     }      
   }
 
@@ -164,6 +181,18 @@
     }
   }
 
+  .s-reklama {
+    padding-bottom: 35px;
+
+    &__content {
+      display: block;
+    }
+
+    &__wrapper {
+      margin: 0 0 30px;
+    }
+  }
+
 }
 
 // ≥576px
@@ -179,6 +208,29 @@
   .srok {
     .timer-flipchart-inner {
       font-size: 24px;
+    }
+  }
+
+  .s-reklama {
+    &__text {
+      margin-bottom: 20px;
+    }
+
+    &__big-text {
+      font-size: 17px;
+      margin-bottom: 20px;
+    }
+
+    &__ways {
+      flex-direction: column;
+    }
+
+    .way:first-child {
+      margin-bottom: 10px;
+    }
+
+    .form {
+      width: 100%;
     }
   }
 

@@ -394,6 +394,63 @@
   }
 }
 
+.s-reklama {
+  padding-bottom: 0;
+  background-image: url('../img/reklama-back.jpg');
+
+  &__content {
+    display: flex;
+  }
+
+  &__wrapper {
+    margin-right: 30px;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 35px;
+  }
+
+  &__big-text {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 35px;
+  }
+
+  &__ways {
+    width: 500px;
+    display: flex;
+    margin-left: 60px;
+    justify-content: space-between;
+  }
+
+  .way {
+    text-align: center;
+
+    &__images {
+      font-size: 0;
+    }
+
+    img {
+      margin: 0 5px 15px;
+    }
+
+    &__text {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+
+  .form {
+    background-color: rgba($dark, 0.6);
+    max-width: 360px;
+    width: 100%;
+    flex-shrink: 0;
+    padding: 20px 0;
+  }
+}
+
 .s-etap {
   &__content {
     position: relative;

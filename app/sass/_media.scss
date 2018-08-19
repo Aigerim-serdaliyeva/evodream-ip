@@ -5,6 +5,16 @@
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
+  .main-menu {
+    li {
+      margin-right: 30px;
+
+      &.last {
+        margin-right: 0;
+      }
+    }
+  }
+
   .s-reklama {
     &__ways {
       margin-left: 0;

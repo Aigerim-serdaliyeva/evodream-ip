@@ -60,7 +60,7 @@ $(document).ready(function () {
         var section = $(id);
         var sectionTop = section.offset().top;
 
-        if (sectionTop <= scrollPos && (sectionTop + section.height()) >= scrollPos) {
+        if (sectionTop <= scrollPos  + 2 && (sectionTop + section.height()) > scrollPos - 2) {
           link.addClass('active');
         } else {
           link.removeClass('active');

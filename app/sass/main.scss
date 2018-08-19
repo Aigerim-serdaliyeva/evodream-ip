@@ -10,10 +10,6 @@
   letter-spacing: -0.5px;
 }
 
-.active {
-  display: block;
-}
-
 .srok {
   display: flex;
   max-width: 420px;
@@ -530,6 +526,16 @@
       padding-left: 5px;
       padding-right: 5px;      
     }
+  }
+}
+
+.s-clients {
+  background-image: url('../img/clients-back.jpg');
+
+  .client {
+    display: inline-block;
+    background-color: #fff;
+    box-shadow: 2.5px 4.33px 8.73px 0.27px rgba(30, 30, 30, 0.66);
   }
 }
 

@@ -499,6 +499,38 @@
   }
 }
 
+.s-adaptation {
+  padding-bottom: 0;
+
+  &__content {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__img {
+    margin-right: 40px;
+  }
+
+  .form {
+    background-color: $dark;
+    padding: 15px 0;
+    margin-top: 35px;
+
+    &__content, &__info {
+      max-width: 620px;
+    }
+
+    .input-div {
+      margin-right: 10px;
+    }
+
+    .button {
+      padding-left: 5px;
+      padding-right: 5px;      
+    }
+  }
+}
+
 .s-thanks {
   padding: 200px 0 100px 0;
   flex-grow: 1;

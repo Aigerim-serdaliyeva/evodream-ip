@@ -23,6 +23,17 @@
       margin-right: 10px;
     }
   }
+
+  .s-adaptation {
+    &__content {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__img {
+      margin: 0 0 20px;
+    }
+  }
 }
 
 // ≥992px
@@ -193,6 +204,14 @@
     }
   }
 
+  .s-adaptation {
+    .form {
+      &__content, &__info {
+        max-width: 460px;
+      }
+    }
+  }
+
 }
 
 // ≥576px
@@ -257,6 +276,15 @@
       &__text {
         flex-grow: 1;
       }
+    }
+  }
+
+  .s-adaptation {
+    .form {
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: -15px;
+      margin-right: -15px;
     }
   }
 

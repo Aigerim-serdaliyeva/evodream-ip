@@ -1,5 +1,24 @@
 @import './base';
 
+.checkbox-list {
+  @include list();
+
+  li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 15px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 1px;
+      left: 0;
+      width: 15px;
+      height: 15px;
+      background-image: url('../img/checkbox.jpg');
+    }
+  }
+}
 
 .page-wrapper {
   overflow: hidden;
@@ -536,6 +555,122 @@
     display: inline-block;
     background-color: #fff;
     box-shadow: 2.5px 4.33px 8.73px 0.27px rgba(30, 30, 30, 0.66);
+  }
+}
+
+.s-difference {
+  &__text {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .difference {
+    &__title {
+      font-size: 18px;
+      font-weight: 900;
+      padding: 9px 15px;
+      text-align: center;
+      margin-bottom: 25px;
+      background-color: #dbdbdb;
+
+      &.active {
+        background-color: $accent;
+        color: #fff;
+      }
+    }
+
+    &__text {
+      position: relative;
+      width: 100%;
+      padding: 5px 0;
+      margin-bottom: 25px;
+      background-color: #ccecf9;
+
+      &:before {
+        content: "";
+        background-color: #ccecf9;
+        position: absolute;
+        top: 0;
+        left: -40px;
+        bottom: 0;
+        width: 40px;
+      }
+
+      &__title {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        width: 110px;
+        position: absolute;
+        font-size: 18px;
+        font-weight: 900;
+        color: #fff;
+        background-color: $accent;
+      }
+
+      &.active {
+        .difference__text__title {
+          top: 0;
+          left: -140px;
+          bottom: 0;
+          display: flex;
+        }
+      }
+    }
+
+    &__block {
+      width: 100%;
+      padding: 20px 20px;
+      margin-bottom: 10px;
+      background-color: #dbdbdb;
+
+      &.active {
+        color: #fff;
+        background-color: $accent;
+      }
+
+      &__title {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    }
+
+    &__items {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    &__plus {
+      font-size: 24px;
+    }
+
+    &__equal {
+      font-size: 24px;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    &__red {
+      text-align: center;
+      color: #ca2020;
+    }
+
+    &__footer {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+
+  ul {
+    @include list();
   }
 }
 

@@ -539,6 +539,46 @@
   }
 }
 
+.s-contacts {
+  padding: 0;
+  position: relative;
+
+  .section-title {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .contact {
+    position: absolute;
+    top: 50px;
+    background-color: rgba(219, 219, 219, 0.9);
+    padding: 25px 30px 40px;
+    z-index: 5;
+
+    &__item {
+      display: flex;
+      align-items: center;
+
+      &:nth-child(2) {
+        margin-bottom: 30px;
+      }
+    }
+
+    &__image {
+      width: 50px;
+      flex-shrink: 0;
+    }
+  }
+
+  .text-phone {
+    display: block;
+
+    &:first-child {
+      margin-bottom: 5px;
+    }
+  }
+}
+
 .s-thanks {
   padding: 200px 0 100px 0;
   flex-grow: 1;

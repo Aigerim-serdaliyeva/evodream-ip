@@ -293,6 +293,24 @@
     }
   }
 
+  .s-contacts {
+    .contact {
+      position: static;
+    }
+
+    .map {
+      overflow: hidden;
+      margin-left: 15px;
+      margin-right: 15px;
+
+      & > ymaps {
+        width: auto !important;
+        height: 280px !important;
+        margin-left: -350px;
+      }
+    }
+  }
+
   .s {
     &-thanks {
       padding: 150px 0 50px;

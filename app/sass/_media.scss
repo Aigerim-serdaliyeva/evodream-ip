@@ -15,6 +15,12 @@
     }
   }
 
+  .footer {
+    .button {
+      width: 200px;
+    }
+  }
+
   .s-reklama {
     &__ways {
       margin-left: 0;
@@ -60,6 +66,10 @@
         font-size: 20px;
       }
     }
+  }
+
+  .s-thanks {
+    margin-top: 85px;
   }
 }
 
@@ -173,6 +183,10 @@
       }
     }
   }
+
+  .s-thanks {
+    margin-top: 68px;
+  }
 }
 
 // ≥768px
@@ -274,6 +288,10 @@
         }
       }  
     }
+  }
+
+  .s-thanks {
+    padding: 40px 0;
   }
 
 }
@@ -393,21 +411,6 @@
         width: auto !important;
         height: 280px !important;
         margin-left: -350px;
-      }
-    }
-  }
-
-  .s {
-    &-thanks {
-      padding: 150px 0 50px;
-      
-      &-title {
-        font-size: 30px;
-      }
-
-      &-text {
-        font-size: 16px;
-        margin-bottom: 40px;
       }
     }
   }

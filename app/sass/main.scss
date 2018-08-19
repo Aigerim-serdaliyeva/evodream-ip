@@ -100,7 +100,7 @@
   font-size: 16px;
 
   .logo {
-    margin-right: 100px;
+    // margin-right: 100px;
   }
 
   &__content {
@@ -133,7 +133,7 @@
   } 
 
   .button {
-    width: 260px;
+    width: 200px;
   }
 }
 
@@ -738,23 +738,26 @@
 }
 
 .s-thanks {
-  padding: 200px 0 100px 0;
   flex-grow: 1;
+  margin-top: 81px;
+  text-align: center;
+  padding: 100px 0;
+  background-image: url('../img/thanks-back.jpg');
     
   &__title {
-    color: $accent;
-    font-size: 48px;
-    font-weight: normal;
+    font-size: 30px;
+    font-weight: 900;
     margin-bottom: 30px;
   }
 
   &__text {
     font-size: 24px;
-    margin: 0 0 125px;
+    margin: 0 0 100px;
   }
 
   &__link {
     text-decoration: underline;
+    font-size: 18px;
     color: $accent;
   }
 }

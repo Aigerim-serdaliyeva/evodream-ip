@@ -206,7 +206,11 @@ $(document).ready(function () {
     },
   });
 
-
+  $(".video__play").click( function () {
+    var $this = $(this);
+    $this.closest(".video__label").find("video")[0].play();
+    $this.closest(".video__img").hide();
+  });
 });
 
 function validateEmail(email) {

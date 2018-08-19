@@ -115,17 +115,11 @@
     }
   }
 
-  .s {
-    &-reviews {
-      .review {
-        display: block;
-        .video__label {
-          text-align: center;
-          margin: 0 auto 20px;
-          display: inline-block;  
-        }
-        
-      }
+  .s-reviews {
+    .review {
+      .video__label {
+        margin-bottom: 20px;
+      }      
     }
   }
 
@@ -287,6 +281,23 @@
   .srok {
     .timer-flipchart-inner {
       font-size: 24px;
+    }
+  }
+
+  .s-reviews {
+    .review {
+      &__block {
+        padding-left: 0;
+        &:before {
+          display: none;
+        }
+      }
+
+      &__table {
+        th {
+          text-align: left;
+        }
+      }
     }
   }
 

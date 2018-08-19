@@ -737,6 +737,32 @@
       </div>
     </section>
 
+    <section class="section s-form">
+      <div class="container">
+        <div class="form form--horizontal inverse">
+          <form action="/mail.php" method="post">
+            <div class="form__title">Оставьте заявку на анализ Вашей ниши и мы подготовим для Вас коммерческое предложение!</div>
+            <div class="form__content">
+
+              <input type="hidden" name="info" value="Оставьте заявку на анализ Вашей ниши и мы подготовим для Вас коммерческое предложение!">
+
+              <div class="input-div">
+                <input type="text" class="input" name="name" placeholder="Введите имя">
+              </div>
+
+              <div class="input-div">
+                <input type="tel" class="input" name="phone" placeholder="Введите телефон *" required="">
+                <span class="error-message">Заполните это поле</span>
+              </div>
+
+              <button class="button ajax-submit" type="submit" id="ostavit_zayavku">Оставить заявку</button>
+            </div>
+            <div class="form__info">* Ваши данные в безопасности и не будут переданы третьим лицам</div>
+          </form>
+        </div>
+      </div>
+    </section>
+
     <footer class="footer">
       <div class="container">
         <div class="footer__content">

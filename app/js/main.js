@@ -180,6 +180,21 @@ $(document).ready(function () {
     },
   });
 
+  $(".carousel-clients").owlCarousel({
+    loop: false,
+    dots: true,
+    nav: false,
+    smartSpeed: 500,
+    margin: 30,
+    navText: ['', ''],
+    responsive: {
+      0: { items: 1, mouseDrag: false, },
+      576: { items: 2, mouseDrag: true, },
+      768: { items: 3, mouseDrag: true, },
+      992: { items: 4, mouseDrag: true, }
+    },
+  });
+
   $(".carousel-certificates").owlCarousel({
     loop: true,
     smartSpeed: 500,

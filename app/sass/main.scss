@@ -111,10 +111,13 @@
     padding: 15px 0;
   }
 
+  &__block {
+    text-align: center;
+  }
+
   &__title {
     font-size: 16px;
     color: #fff;
-    text-align: center;
     font-weight: 500;
     margin-bottom: 10px;
   }
@@ -122,9 +125,11 @@
   &__link {
     font-size: 16px;
     color: $accent;
-    text-align: center;
-    display: block;
     text-decoration: underline;
+
+    &:hover {
+      color: $accent;
+    }
   } 
 
   .button {
@@ -793,6 +798,22 @@
     &__title {
       font-size: 18px;
     }
+  }
+}
+
+.politika-modal {
+  
+  .remodal-close {
+    &:before {
+      color: #000;
+    }
+  }
+
+  &__title {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
   }
 }
 

@@ -7,6 +7,10 @@ $(document).ready(function () {
   var $menu = $(".main-menu");
   var headerHeight = 78;
   var $hamburger = $(".hamburger");
+  var $portfolioModal = $('[data-remodal-id="portfolio-modal"]');
+  var portfolioModal = $portfolioModal.remodal();
+  var $portfolioModalImage = $portfolioModal.find(".portfolio-modal__image");
+  var $portfolioModalLoader = $portfolioModal.find(".portfolio-modal__loader");
 
   // забираем utm из адресной строки и пишем в sessionStorage, чтобы отправить их на сервер при form submit
   var utms = parseGET();
@@ -179,6 +183,20 @@ $(document).ready(function () {
     $this.closest(".tab").find(".tab__content").removeClass("active").filter("[data-tab=" + id +"]").addClass("active");
   });
 
+  $(".portfolio .button").click(function(e) {
+    e.preventDefault();
+    $portfolioModalLoader.show();
+    $portfolioModalImage.hide();
+    var imagePath = "./img/portfolio/big/" + $(this).data("image");
+    $portfolioModalImage.attr("src", imagePath);
+    portfolioModal.open();
+  });
+
+  $portfolioModalImage.on('load', function() {
+    $portfolioModalLoader.hide();
+    $portfolioModalImage.show();
+  });
+
   $(".carousel-reviews").owlCarousel({
     loop: true,
     dots: true,
@@ -188,7 +206,7 @@ $(document).ready(function () {
     navText: ['', ''],
     responsive: {
       0: { items: 1, mouseDrag: false, },
-      576: { items: 1, mouseDrag: true, },
+      576: { items: 1, mouseDrag: false, },
     },
   });
 
@@ -201,9 +219,9 @@ $(document).ready(function () {
     navText: ['', ''],
     responsive: {
       0: { items: 1, mouseDrag: false, },
-      576: { items: 2, mouseDrag: true, },
-      768: { items: 3, mouseDrag: true, },
-      992: { items: 4, mouseDrag: true, }
+      576: { items: 2, mouseDrag: false, },
+      768: { items: 3, mouseDrag: false, },
+      992: { items: 4, mouseDrag: false, }
     },
   });
 
@@ -216,8 +234,8 @@ $(document).ready(function () {
     navText: ['', ''],
     responsive: {
       0: { items: 1, mouseDrag: false, },
-      768: { items: 2, mouseDrag: true, },
-      992: { items: 3, mouseDrag: true, }
+      768: { items: 2, mouseDrag: false, },
+      992: { items: 3, mouseDrag: false, }
     },
   });
 });

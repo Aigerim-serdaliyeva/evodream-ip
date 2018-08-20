@@ -498,7 +498,8 @@
       left: 0;
       width: 100%;
       height: 100%;
-      display: none;
+      // display: none;
+      display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
@@ -930,6 +931,26 @@
     font-size: 1.2em;
     font-weight: 500;
     margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+.portfolio-modal {
+  padding: 50px 20px;
+  
+  .remodal-close {
+    width: 50px;
+    height: 50px;
+    
+    &:before {
+      color: #000;
+      font-size: 60px;
+      line-height: 50px;
+      width: 50px;
+    }
+  }
+
+  &__loader {
     text-align: center;
   }
 }

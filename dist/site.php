@@ -11,7 +11,7 @@
     }
 
     img {
-      w100%$_COOKIE
+      width: 100%;
     }
   </style>
 </head>

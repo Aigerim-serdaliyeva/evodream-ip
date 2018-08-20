@@ -20,6 +20,29 @@
   }
 }
 
+@keyframes customZoomIn {
+  0% {
+    opacity: 1;
+    transform: scale(0, 0);
+  }
+
+  20% {
+    transform: scale(1, 1);
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.customZoomIn {
+  animation: customZoomIn 6s linear infinite;
+}
+
 .page-wrapper {
   overflow: hidden;
   min-height: 100vh;

@@ -279,6 +279,14 @@
   }
 
   .s-difference {
+    &__text {
+      padding: 0;
+    }
+
+    &__banner {
+      display: none;
+    }
+
     .difference {
       &__title {
         &:not(.active) {

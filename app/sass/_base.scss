@@ -398,9 +398,9 @@ h1, h2, h3, h4, h5, h6 {
 		&-prev, &-next {
 			position: absolute;
 			top: 50%;
-			width: 26px;
-      height: 50px;
-      background-image: url('../img/arrow-left.png') !important;
+			width: 45px;
+      height: 45px;
+      background-image: url('../img/arrow-left.jpg') !important;
       background-repeat: no-repeat !important;
       background-position: center center !important;
       transform: translateY(-50%);
@@ -414,7 +414,7 @@ h1, h2, h3, h4, h5, h6 {
 
 		&-next {
       right: 0px;
-      background-image: url('../img/arrow-right.png') !important;
+      background-image: url('../img/arrow-right.jpg') !important;
     }
 
     &-dots {

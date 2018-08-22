@@ -23,14 +23,16 @@ $(document).ready(function () {
   }
 
   // Инициализируем анимацию (для мобильных отключен)
-  new WOW({ mobile: false }).init();
+  if ($wnd.width() > 576) {
+    new WOW({ mobile: false }).init();
+  }
 
   if ($wnd.width() < 992) {
     headerHeight = 68;
   }
 
   // jquery.maskedinput для ПК и планшет (мобильном не подключаем)
-  if ($wnd.width() > 479) {
+  if ($wnd.width() > 576) {
     $("input[type=tel]").mask("+7 (999) 999 99 99", {
       completed: function () {
         $(this).removeClass('error');
@@ -173,6 +175,24 @@ $(document).ready(function () {
     var $this = $(this);
     $this.closest(".video__label").find("video")[0].play();
     $this.closest(".video__img").hide();
+  });
+
+  $(".video__show").click(function() {
+    var $this = $(this);
+    var $review = $(this).closest(".review");
+    
+    $this.addClass("d-none");
+    $this.siblings(".video__hide").removeClass("d-none");
+    $review.find(".video__label").parent().removeClass("d-none");
+  });
+
+  $(".video__hide").click(function() {
+    var $this = $(this);
+    var $review = $(this).closest(".review");
+    
+    $this.addClass("d-none");
+    $this.siblings(".video__show").removeClass("d-none");
+    $review.find(".video__label").parent().addClass("d-none");
   });
 
   $(".tab__link").click( function () {

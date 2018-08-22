@@ -289,7 +289,7 @@
 
     .difference {
       &__title {
-        &:not(.active) {
+        &.active {
           margin-top: 40px;
         }
       }  
@@ -313,13 +313,20 @@
   }
 
   .srok {
-    .timer-flipchart-inner {
-      font-size: 24px;
+    &__title {
+      margin-right: 5px;
     }
   }
 
   .s-reviews {
     .review {
+      .video {
+        &__label {
+          margin-bottom: 0;
+          margin-top: 20px;
+        }      
+      }
+
       &__block {
         padding-left: 0;
         &:before {
@@ -331,6 +338,10 @@
         th {
           text-align: left;
         }
+      }
+
+      &__info {
+        margin-bottom: 10px;
       }
     }
   }
@@ -424,6 +435,16 @@
     }
   }
 
+  .s-difference {
+    .difference {
+      &__block {
+        &.active {
+          margin-top: 20px;
+        }
+      }  
+    }
+  }
+
   .s-contacts {
     .contact {
       position: static;
@@ -465,6 +486,11 @@
     .form {
       // margin: 0 auto;
     }
+  }
+
+  .portfolio-modal {
+    max-width: none;
+    padding: 50px 0;
   }
 }
 

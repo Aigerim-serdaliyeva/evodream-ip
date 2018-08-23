@@ -319,6 +319,27 @@
   }
 
   .s-reviews {
+    .owl {
+      &-carousel {
+        padding-top: 60px;
+      }
+
+      &-nav {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 110px;
+        margin-left: -55px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &-prev, &-next {
+        position: static;
+        transform: none;
+      }
+    }
+
     .review {
       .video {
         &__label {
@@ -335,6 +356,11 @@
       }
 
       &__table {
+        &__title {
+          font-weight: bold;
+          text-align: center;
+        }
+        
         th {
           text-align: left;
         }

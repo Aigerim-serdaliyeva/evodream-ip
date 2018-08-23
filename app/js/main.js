@@ -218,15 +218,13 @@ $(document).ready(function () {
   });
 
   $(".carousel-reviews").owlCarousel({
-    loop: true,
-    dots: true,
-    nav: false,
+    loop: true,    
     smartSpeed: 500,
     margin: 30,
     navText: ['', ''],
     responsive: {
-      0: { items: 1, mouseDrag: false, },
-      576: { items: 1, mouseDrag: false, },
+      0: { items: 1, mouseDrag: false, dots: false, nav: true },
+      576: { items: 1, mouseDrag: true, dots: true, nav: false },
     },
   });
 
@@ -239,9 +237,9 @@ $(document).ready(function () {
     navText: ['', ''],
     responsive: {
       0: { items: 1, mouseDrag: false, },
-      576: { items: 2, mouseDrag: false, },
-      768: { items: 3, mouseDrag: false, },
-      992: { items: 4, mouseDrag: false, }
+      576: { items: 2, mouseDrag: true, },
+      768: { items: 3, mouseDrag: true, },
+      992: { items: 4, mouseDrag: true, }
     },
   });
 
@@ -254,8 +252,8 @@ $(document).ready(function () {
     navText: ['', ''],
     responsive: {
       0: { items: 1, mouseDrag: false, },
-      768: { items: 2, mouseDrag: false, },
-      992: { items: 3, mouseDrag: false, }
+      768: { items: 2, mouseDrag: true, },
+      992: { items: 3, mouseDrag: true, }
     },
   });
 });

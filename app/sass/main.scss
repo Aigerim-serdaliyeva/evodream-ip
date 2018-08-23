@@ -292,7 +292,7 @@
 
       &__title {
         font-weight: 500;
-        margin-bottom: 15px;
+        margin: 20px 0 15px;
       }
 
       th, td {
@@ -665,7 +665,11 @@
   background-image: url('../img/clients-back.jpg');
 
   .client {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 215px;
+    width: 100%;
     background-color: #fff;
     box-shadow: 2.5px 4.33px 8.73px 0.27px rgba(30, 30, 30, 0.66);
   }
@@ -759,6 +763,12 @@
         font-weight: bold;
         text-align: center;
         margin-bottom: 20px;
+      }
+
+      &__word {
+        white-space: nowrap;
+        display: block;
+        margin-top: 10px;
       }
     }
 

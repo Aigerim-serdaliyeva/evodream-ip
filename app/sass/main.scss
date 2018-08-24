@@ -23,6 +23,7 @@
 .page-wrapper {
   overflow: hidden;
   min-height: 100vh;
+  padding-top: 82px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -194,7 +195,7 @@
 
 
 .s-main {
-  padding-top: 150px;
+  padding-top: 68px;
   background-image: url('../img/main-back.jpg');
 
   &__title {
@@ -949,6 +950,42 @@
 
   &__loader {
     text-align: center;
+  }
+}
+
+#test-page {
+  .s-main {
+    min-height: 520px;
+    background-image: url('../img/main-back-1.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    // align-items: flex-end;
+    padding-bottom: 0;
+
+    &__title {
+      margin-bottom: 60px;
+    }
+
+    &__form {
+      background-color: rgba(#fff, 0.7);
+      padding: 20px 0 15px;
+    }
+
+    .form {
+      background: none;
+      padding: 0;
+    }
+
+    .srok {
+      display: block;
+
+      &__title {
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 15px;
+      }
+    }
   }
 }
 

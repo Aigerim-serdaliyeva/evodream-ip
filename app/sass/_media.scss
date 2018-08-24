@@ -5,6 +5,10 @@
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
+  .page-wrapper {
+    padding-top: 84px;
+  }
+
   .main-menu {
     li {
       margin-right: 30px;
@@ -75,6 +79,10 @@
 
 // ≥992px
 @include media-breakpoint-down(md) {
+  .page-wrapper {
+    padding-top: 68px;
+  }
+
   .hamburger {
     display: block;
   }    

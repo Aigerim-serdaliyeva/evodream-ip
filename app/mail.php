@@ -40,8 +40,8 @@ if(isset($_POST["info"])) {
   mail($admin_email, $form_subject, $message, $headers);
 
   // добавление лид в bitrix
-  $data['LOGIN']='bdm1@marketing-time.kz'; //На кого рапаковывается
-  $data['PASSWORD']='passadoble1983'; //пароль
+  $data['LOGIN']='operator@evodreamholding.com'; //На кого рапаковывается
+  $data['PASSWORD']='123456789operator'; //пароль
   $subdomain='mtkz'; // поддомен битрикс24 mtkz.bitrix24.ru. Смотрите внизу
   $block= $source.': '.$info;
   $source = 'evodreammarketing.com'; //Источник, Если что спрашивать у Кирилла
